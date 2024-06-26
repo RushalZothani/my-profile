@@ -1,84 +1,110 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #ffeb3b; /* Yellow background color */
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
-    min-height: 100vh;
-    margin: 0;
-    background-color: rgb(229, 236, 28);
-}
-
-p {
-    text-align: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
-    background: yellow;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
     max-width: 800px;
-    width: 100%;
-}
-
-h1,
-h2,
-h3 {
+    margin: auto;
+    padding: 20px;
+    background-color: white; /* White background for content area */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     text-align: center;
 }
 
 header {
-    background: floralwhite;
-    padding: 20px;
-    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: 20px 0;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
 }
 
 form {
     display: flex;
     flex-direction: column;
-}
-
-label,
-input,
-textarea {
-    margin-top: 10px;
-}
-
-img {
-    display: block;
-    margin: 10px auto;
-    max-width: 100%;
     align-items: center;
 }
 
-nav ul {
-    background-color: antiquewhite;
-    color: #333;
-    list-style: none;
-    text-align: center;
-    padding: 10px;
+form label {
+    margin: 10px 0 5px;
 }
 
-nav ul li {
-    display: inline;
-}
-
-footer {
-    background-color: antiquewhite;
-    color: #333;
-    text-align: center;
+form input {
     padding: 10px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     width: 100%;
+    max-width: 300px;
 }
 
-.upload-button {
-    background-color: #007bff;
-    color: #ffffff;
-    padding: 10px 20px;
+form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+#confirmation-message {
+    margin-top: 20px;
+    color: green;
 }
